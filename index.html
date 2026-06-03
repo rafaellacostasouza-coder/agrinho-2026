@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Fazenda Virtual Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>🚜 Mini Fazenda Agrinho 🌱</h1>
+            <p>Cultive com sustentabilidade e responsabilidade!</p>
+        </header>
+
+        <section class="painel-status">
+            <div class="status-item">🪙 Moedas: <span id="moedas">50</span></div>
+            <div class="status-item">🧺 Colheitas: <span id="colheitas">0</span></div>
+        </section>
+
+        <section class="mercado">
+            <label for="semente-seletor">📋 Escolha sua semente:</label>
+            <select id="semente-seletor">
+                <option value="milho">🌽 Milho (Custo: 10 | Venda: 25)</option>
+                <option value="tomate">🍅 Tomate (Custo: 15 | Venda: 40)</option>
+            </select>
+        </section>
+
+        <main class="campo-cultivo">
+            <div class="terra" id="slot-0" onclick="interagir(0)">
+                <div class="emoji">🟫</div>
+                <div class="legenda">Vazio</div>
+            </div>
+            <div class="terra" id="slot-1" onclick="interagir(1)">
+                <div class="emoji">🟫</div>
+                <div class="legenda">Vazio</div>
+            </div>
+            <div class="terra" id="slot-2" onclick="interagir(2)">
+                <div class="emoji">🟫</div>
+                <div class="legenda">Vazio</div>
+            </div>
+            <div class="terra" id="slot-3" onclick="interagir(3)">
+                <div class="emoji">🟫</div>
+                <div class="legenda">Vazio</div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Programa Agrinho - Aprendendo a cultivar o futuro.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
